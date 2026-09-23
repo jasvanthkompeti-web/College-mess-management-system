@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>College Mess Management</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <h2>🍽️ College Mess</h2>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/#orders">My Orders</a>
+    <a href="/#login" id="loginLink">Login</a>
+    <button id="logout" class="hidden">Logout</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <small>SMART MESS MANAGEMENT</small>
+    <h1>College meals made simple.</h1>
+    <p>View today's menu, login and order your meal.</p>
+    <a class="btn" href="#menu">View Menu</a>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Today's Menu</h2>
+  <div id="menuList" class="grid"></div>
+</section>
+
+<section id="orders" class="hidden">
+  <h2>My Orders</h2>
+  <div id="orderList"></div>
+</section>
+
+<section id="login" class="card">
+  <h2>Login / Register</h2>
+  <input id="name" placeholder="Name (only for registration)">
+  <input id="email" type="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <div class="actions">
+    <button class="btn" onclick="login()">Login</button>
+    <button class="btn secondary" onclick="registerUser()">Register</button>
+  </div>
+  <p id="msg"></p>
+</section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
